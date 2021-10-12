@@ -7,6 +7,8 @@ export interface UidInterface {
   uid: number | string;
   audio: boolean;
   video: boolean;
+  uPhone?: string;
+  uName?: string;
 }
 
 export interface UidStateInterface {

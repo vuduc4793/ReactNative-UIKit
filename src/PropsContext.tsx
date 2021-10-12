@@ -134,6 +134,8 @@ export interface StylePropInterface {
  * Props object for customising the UI Kit functionality
  */
 export interface RtcPropsInterface {
+  uPhone?: string;
+  uName?: string;
   /**
    * Agora App ID - used to authenticate the request
    */
@@ -237,6 +239,7 @@ export enum mode {
 }
 
 export interface CustomCallbacksInterface {
+  SwitchLayout(): void;
   /**
    * Callback for EndCall
    */
@@ -322,6 +325,7 @@ export interface IconsInterface {
    * Icon to close the overlay in floating layout
    */
   close: string;
+  switchLayout: string;
 }
 
 const initialValue: PropsInterface = {

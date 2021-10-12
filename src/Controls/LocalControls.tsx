@@ -9,6 +9,7 @@ import RemoteControls from './RemoteControls';
 import {MaxUidConsumer} from '../MaxUidContext';
 import PropsContext, {role} from '../PropsContext';
 import LocalUserContextComponent from '../LocalUserContext';
+import SwitchLayout from './Local/SwitchLayout';
 
 function Controls(props: {showButton: Boolean}) {
   const {styleProps, rtcProps} = useContext(PropsContext);
@@ -24,6 +25,7 @@ function Controls(props: {showButton: Boolean}) {
             <LocalAudioMute />
             <LocalVideoMute />
             <SwitchCamera />
+            <SwitchLayout />
             <EndCall />
           </>
         )}
